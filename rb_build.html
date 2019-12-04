@@ -7,8 +7,8 @@
       Review Assignment
 
       Red Ball Pizza Building Form
-      Author: 
-      Date:   
+      Author: Ariahnnah Porras
+      Date:   12/03/19
 
       Filename:   rb_build.html
 
@@ -19,6 +19,9 @@
    <title>Red Ball Pizza Build a Pizza</title>
    <link href="rb_base.css" rel="stylesheet" />
    <link href="rb_styles2.css" rel="stylesheet" />
+   <script src="rb_formsubmit2.js"></script>
+   <link href="rb_forms2.css" rel="stylesheet"/>
+   <script src="rb_formsubmit2.js"></script>
 </head>
 
 <body>
@@ -42,6 +45,38 @@
          by selecting from the ingredients below. You can divide your pizza
          into two regions to give your friends a wide choice of toppings
          and flavors.</p>
+
+         <form>
+               <form action="http://www.example.com/redball/build"
+                  method="post">
+            <div>
+               <label for="quanityBox">Quantity</label>
+                     <input name="pizzaQuantity" id="quanityBox" type="number"
+                        value="1" step="1" min="1" max="10" />
+            </div>
+            <div>
+               <img src="rb_sizes.png">
+               <label for="sizeBox">Pizza Size</br>
+               <input name="pizzaSize" id="sizeBox" type="range">
+               <value="5" step="0" min="10" max="16" />
+            </div>
+            <div>
+               <label for="crustBox">Pizza Crust</label>
+               <datalist id="crustBox">
+                     <option value="Thin"/>
+                     <option value="Thick"/>
+                     <option value="Stuffed"/>
+                     <option value="Pan"/>
+                  </datalist>
+                  <div>
+                     
+                  </div>
+            </div>
+            </form>
+
+        
+ 
+   
          
    </section>
 
